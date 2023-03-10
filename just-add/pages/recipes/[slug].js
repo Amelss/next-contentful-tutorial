@@ -35,17 +35,22 @@ export async function getStaticProps({params}) {
         'fields.slug': params.slug
     })
 
-    if (!items.length) {
-        return {
-            redirect: {
-                destination: '/',
-                permanent: false
-            }
-        }
-    }
+    // CONDITIONAL REDIRECTING TO HOMEPAGE
+    // if (!items.length) {
+    //     return {
+    //         redirect: {
+    //             destination: '/',
+    //             permanent: false
+    //         }
+    //     }
+    // }
+
+    const notFound = items[0] ? false : true
+    
     return {
         props: { recipe: items[0] },
         revalidate: 1,
+        notFound
     }
 }
 
