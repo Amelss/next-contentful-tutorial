@@ -2,7 +2,8 @@ import React from 'react'
 import { createClient } from "contentful";
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import styles from '../../styles/slug.module.css'
+import styles from "../../styles/Slug.module.css";
+
 
  const client = createClient({
    space: process.env.CONTENTFUL_SPACE_ID,
