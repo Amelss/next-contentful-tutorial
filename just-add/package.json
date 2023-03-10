@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node_modules/next/dist/bin/next start -p $PORT",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.16.2",
     "contentful": "^9.3.3",
-    "next": "13.2.3",
+    "next": "13",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
