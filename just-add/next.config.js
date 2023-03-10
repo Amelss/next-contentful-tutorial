@@ -3,9 +3,6 @@
 module.exports = {
   images: {
     domains: ["images.ctfassets.net"],
-  },
-  nextConfig: {
-    reactStrictMode: true,
-  },
+  }
 };
 
